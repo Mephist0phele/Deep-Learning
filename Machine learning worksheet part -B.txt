@@ -1,0 +1,59 @@
+Q1.   C
+Q2.   C
+Q3.   C
+Q4.   D
+Q5.   C
+Q6.   B
+Q7.   B
+Q8.   A,B
+Q9.   A,D
+Q10.  A,B,D 
+Q11.  Outliers in input data can skew and mislead the training process of machine learning algorithms resulting in 
+longer training times, less accurate models and ultimately poorer results.
+   
+The IQR can be used to identify outliers by defining limits on the sample values that are a factor k of the IQR below the 25th percentile or above the 75th percentile. 
+The common value for the factor k is the value 1.5. A factor k of 3 or more can be used to identify values that are extreme outliers or “far outs” when described in the 
+
+context of box and whisker plots.
+
+On a box and whisker plot, these limits are drawn as fences on the whiskers (or the lines) that are drawn from the box. Values that fall outside of these values are drawn as dots.
+
+We can calculate the percentiles of a dataset using the percentile() NumPy function that takes the dataset and specification of the desired percentile. The IQR can then be 
+calculated as the difference between the 75th and 25th percentiles.
+
+
+
+Q12.Bagging is a way to decrease the variance in the prediction by generating additional data for training from dataset using combinations with repetitions to produce 
+multi-sets of the original data. 
+Boosting is an iterative technique which adjusts the weight of an observation based on the last classification.
+
+
+
+
+Q13.Adjusted R 2 is a special form of R 2, the coefficient of determination. 
+Adjusted R 2 is the better model when you compare models that have a different amount of variables. The logic behind it is, that R 2 always increases 
+when the number of variables increases. 
+Meaning that even if you add a useless variable to you model, your R 2 will still increase.
+
+you can calculate the adjusted R2 from R2 with a simple formula given here. Adj r2 = 1- (1-R2)* (n-1)/ (n-p-1) 
+
+
+Q14.Standardization is when a variable is made to follow the standard normal distribution ( mean =0 and standard deviation = 1). 
+On the other hand, normalization is when a variable is fitted within a certain range ( generally between 0 and 1)
+
+
+
+
+Q15.Cross-validation is a technique that is used for the assessment of how the results of statistical analysis generalize to an independent data set. 
+Cross-validation is largely used in settings where the target is prediction and it is necessary to estimate the accuracy of the performance of a predictive model
+
+
+advantage:1. Reduces Overfitting: In Cross Validation, we split the dataset into multiple folds and train the algorithm on different folds. 
+This prevents our model from overfitting the training dataset. 
+So, in this way, the model attains the generalization capabilities which is a good sign of a robust algorithm.
+
+
+
+disadvantage:
+1. Increases Training Time: Cross Validation drastically increases the training time. Earlier you had to train your model only on one training set, 
+but with Cross Validation you have to train your model on multiple training sets. 
